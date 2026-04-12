@@ -1,0 +1,33 @@
+﻿User-agent: *
+Allow: /
+
+# AI Search Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# CommonCrawl - training only, not citation
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://tactil.dev/sitemap.xml

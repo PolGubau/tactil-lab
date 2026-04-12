@@ -1,8 +1,8 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
+import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useTranslation } from '@/shared/i18n/hooks'
+import { useEffect, useRef, useState } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -87,7 +87,9 @@ export default function Contact() {
               <textarea placeholder={t.form_message_placeholder} rows={4} className={inputClass + ' resize-none'} style={{ borderColor: 'var(--border)', color: 'var(--fg)' }}
                 value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} /></div>
 
-            {status === 'success' && <p className='text-sm font-medium' style={{ color: 'var(--accent-alt)' }}>{t.form_success}</p>}
+            {status === 'success' && (
+              <p className='text-sm font-bold px-4 py-2 rounded-full' style={{ background: '#c4eb36', color: '#1A1714' }}>{t.form_success}</p>
+            )}
             {status === 'error' && <p className='text-sm font-medium' style={{ color: '#E84500' }}>{t.form_error}</p>}
 
             <button type='submit' disabled={status === 'sending'} className='btn-primary self-start disabled:opacity-50'>

@@ -1,0 +1,46 @@
+# Tactil
+
+> Custom web design and development studio based in Barcelona, building fast, bespoke websites for businesses worldwide.
+
+## Overview
+
+Tactil is a web design and development agency specialising in 100% custom-built websites - no templates, no WordPress. Every site is hand-coded, optimised for speed, SEO, and conversion. Based in Barcelona, Spain.
+
+## Services
+
+- **Landing Page** - High-converting single-page site, delivered in 5–7 days. From EUR 499.
+- **Business Website** - Multi-page professional presence (up to 5 pages), delivered in 2–3 weeks. From EUR 699.
+- **Custom Development** - E-commerce, booking systems, web apps, platforms. Custom pricing.
+
+## Key Facts
+
+- Location: Barcelona, Catalonia, Spain
+- Average delivery: 7 days (landing pages), 2–3 weeks (full sites)
+- Performance: 100/100 Google Lighthouse on every project
+- Projects delivered: 50+
+- Support: 30 days free after launch
+- No templates, no lock-in - full ownership handed to client
+- Languages: English, Spanish (Castilian), Catalan, Italian
+
+## Pricing
+
+Machine-readable: https://tactil.dev/pricing.md
+Pricing section: https://tactil.dev/en#pricing
+
+## Key Pages
+
+- English: https://tactil.dev/en
+- Spanish: https://tactil.dev/es
+- Catalan: https://tactil.dev/ca
+- Italian: https://tactil.dev/it
+- Contact: https://tactil.dev/en#contact
+- Portfolio: https://tactil.dev/en#projects
+- FAQ: https://tactil.dev/en#faq
+
+## Differentiators
+
+1. 100% custom code - no WordPress, no templates
+2. Fast delivery - landing pages in under 7 days
+3. Transparent pricing - no hidden fees or lock-in
+4. Full ownership - all files and access handed over to client
+5. Performance-first - 100/100 Lighthouse on every project
