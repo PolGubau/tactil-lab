@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import LenisProvider from '@/components/providers/LenisProvider'
 import Cursor from '@/components/cursor/Cursor'
+import Nav from '@/components/nav/Nav'
 
 export const metadata: Metadata = {
   title: 'Tactil - Web Design & Development',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='grain antialiased'>
         <LenisProvider>
           <Cursor />
+          <Nav />
           {children}
         </LenisProvider>
       </body>
