@@ -1,10 +1,17 @@
-'use client'
+﻿'use client'
 import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
+
+// Parses "30+" -> { num: 30, suffix: "+" }, "100%" -> { num: 100, suffix: "%" }, "24h" -> { num: 24, suffix: "h" }
+function parseStatValue(raw: string): { num: number; suffix: string } {
+  const match = raw.match(/^(\d+(?:\.\d+)?)(.*)$/)
+  if (!match) return { num: 0, suffix: raw }
+  return { num: parseFloat(match[1]), suffix: match[2] }
+}
 
 export default function Stats() {
   const t = useTranslation()
@@ -20,15 +27,46 @@ export default function Stats() {
   ]
 
   useEffect(() => {
+    if (!sectionRef.current) return
     const ctx = gsap.context(() => {
-      gsap.fromTo('[data-stats-header]', { opacity: 0, y: 30 }, {
-        opacity: 1, y: 0, duration: 0.7,
-        scrollTrigger: { trigger: sectionRef.current, start: 'top 78%' }
+
+      // Header reveal: line grows + text fades up
+      gsap.set('[data-s-line]', { scaleX: 0 })
+      gsap.fromTo('[data-stats-header]', { opacity: 0, y: 40 }, {
+        opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+        scrollTrigger: { trigger: sectionRef.current, start: 'top 76%' },
       })
-      gsap.fromTo('[data-stat-card]', { opacity: 0, y: 32 }, {
-        opacity: 1, y: 0, duration: 0.6, stagger: 0.08,
-        scrollTrigger: { trigger: sectionRef.current, start: 'top 72%' }
+      gsap.to('[data-s-line]', {
+        scaleX: 1, duration: 1.1, ease: 'power2.out',
+        scrollTrigger: { trigger: sectionRef.current, start: 'top 72%' },
       })
+
+      // Stat cards: staggered rise-from-below with clip
+      gsap.fromTo('[data-stat-card]', { y: 48, opacity: 0 }, {
+        y: 0, opacity: 1, duration: 0.7, stagger: 0.1, ease: 'power3.out',
+        scrollTrigger: { trigger: sectionRef.current, start: 'top 72%' },
+      })
+
+      // Counter animation — animate each number from 0 to target
+      const cards = sectionRef.current!.querySelectorAll<HTMLElement>('[data-stat-card]')
+      cards.forEach((card, i) => {
+        const raw = stats[i].value
+        const { num, suffix } = parseStatValue(raw)
+        if (num === 0) return
+        const el = card.querySelector<HTMLElement>('[data-stat-num]')
+        if (!el) return
+        const proxy = { val: 0 }
+        gsap.to(proxy, {
+          val: num,
+          duration: 1.6,
+          ease: 'power2.out',
+          delay: 0.1 * i,
+          snap: { val: 1 },
+          onUpdate: () => { el.textContent = Math.round(proxy.val) + suffix },
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 72%' },
+        })
+      })
+
     }, sectionRef)
     return () => ctx.revert()
   }, [t])
@@ -54,27 +92,35 @@ export default function Stats() {
             <p className='text-base leading-relaxed' style={{ color: 'var(--fg-muted)', maxWidth: '30ch' }}>
               {t.stats_description}
             </p>
-            <div className='mt-10 h-px w-16' style={{ background: 'var(--accent)' }} />
+            <div
+              data-s-line
+              className='mt-10 h-px w-16 origin-left'
+              style={{ background: 'var(--accent)' }}
+            />
           </div>
 
-          {/* Right: 3×2 stat grid */}
+          {/* Right: 3x2 stat grid */}
           <div className='lg:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-4'>
-            {stats.map((stat) => (
-              <div key={stat.label} data-stat-card className='card opacity-0 p-7 flex flex-col gap-2'>
-                <span
-                  className='font-black tracking-tight leading-none'
-                  style={{ fontSize: 'clamp(2.4rem,4.5vw,3.2rem)', color: 'var(--accent)' }}
-                >
-                  {stat.value}
-                </span>
-                <span
-                  className='text-[10px] tracking-[0.18em] uppercase font-semibold leading-snug'
-                  style={{ color: 'var(--fg-muted)' }}
-                >
-                  {stat.label}
-                </span>
-              </div>
-            ))}
+            {stats.map((stat) => {
+              const { num, suffix } = parseStatValue(stat.value)
+              return (
+                <div key={stat.label} data-stat-card className='card opacity-0 p-7 flex flex-col gap-2'>
+                  <span
+                    data-stat-num
+                    className='font-black tracking-tight leading-none'
+                    style={{ fontSize: 'clamp(2.4rem,4.5vw,3.2rem)', color: 'var(--accent)' }}
+                  >
+                    {num === 0 ? stat.value : '0' + suffix}
+                  </span>
+                  <span
+                    className='text-[10px] tracking-[0.18em] uppercase font-semibold leading-snug'
+                    style={{ color: 'var(--fg-muted)' }}
+                  >
+                    {stat.label}
+                  </span>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -53,5 +53,5 @@
 
 ## Contact
 
-Request a quote: https://tactil.dev/en#contact
+Request a quote: https://tactilstudio.com#contact
 Location: Barcelona, Catalonia, Spain
