@@ -6,12 +6,12 @@ export const es: Translations = {
 	nav_prices: "Precios",
 	nav_contact: "Contacto",
 
-	hero_eyebrow: "Diseño Web & Desarrollo",
-	hero_title: "Tu negocio puede atraer",
+	hero_eyebrow: "Diseño Web & Desarrollo · Barcelona",
+	hero_title: "Webs a medida que consiguen",
 	hero_accent: "más clientes.",
 	hero_description:
-		"Creamos webs que trabajan para ti las 24h. Diseño limpio, estrategia clara, resultados reales. Sin tecnicismos - solo crecimiento.",
-	cta_primary: "Hablemos",
+		"Código a mano desde Barcelona. Entregadas en 7 días. 100/100 en Google. 50+ negocios creciendo — sin plantillas, sin WordPress, solo resultados.",
+	cta_primary: "Empieza tu proyecto",
 	cta_secondary: "Ver nuestro trabajo",
 
 	marquee_items: [
@@ -28,18 +28,18 @@ export const es: Translations = {
 	],
 
 	features_label: "Lo que hacemos",
-	features_headline: "Hecho para",
-	features_headline_accent: "resultados reales.",
+	features_headline: "Construido para",
+	features_headline_accent: "crecer de verdad.",
 	scroll_hint: "Desliza para explorar",
-	feature_1_title: "Diseño que atrae clientes",
+	feature_1_title: "Diseño que genera confianza al instante",
 	feature_1_desc:
-		'Una web bonita genera confianza al instante. Creamos visuals que hacen que tus clientes digan "este es el que quiero", y te contraten.',
+		"Los visitantes se forman una opinión en 50 milisegundos. Creamos visuals que hacen que tus clientes digan 'este es el que quiero' — y te contraten al momento.",
 	feature_1_tag: "Diseño",
-	feature_2_title: "Hecho para tu negocio",
+	feature_2_title: "Sin plantillas. 100% tu marca.",
 	feature_2_desc:
-		"Sin plantillas genéricas. Cada página está construida alrededor de tu marca, tus clientes y tus objetivos, nada menos.",
+		"Sin temas, sin arrastrar y soltar. Cada página está escrita a mano para tu marca, tu audiencia y tus objetivos — para que destaques en vez de pasar desapercibido.",
 	feature_2_tag: "Desarrollo",
-	feature_3_title: "Perfecto en cualquier pantalla",
+	feature_3_title: "Perfecto en cualquier dispositivo",
 	feature_3_desc:
 		"En móvil, tablet u ordenador, tu web luce impecable. Tus clientes navegan desde todas partes, nos aseguramos de que brilles en todas.",
 	feature_3_tag: "Responsive",
@@ -49,7 +49,7 @@ export const es: Translations = {
 	feature_4_tag: "Rendimiento",
 
 	process_label: "Cómo funciona",
-	process_headline: "De idea a publicada en días",
+	process_headline: "De briefing a publicada en 7 días",
 	step_1_num: "01",
 	step_1_title: "Consulta gratuita",
 	step_1_desc:
@@ -90,20 +90,21 @@ export const es: Translations = {
 	stat_6_label: "Tiempo de respuesta",
 
 	pricing_label: "Precios",
-	pricing_headline: "Precios claros, resultados reales",
-	pricing_subtitle: "Sin sorpresas. Elige el plan que encaja con tu negocio.",
+	pricing_headline: "Precios fijos. Sin sorpresas.",
+	pricing_subtitle:
+		"Cada proyecto incluye precio cerrado y fecha de entrega — pactados antes de empezar.",
 	per_project: "/ proyecto",
 	popular: "Más popular",
 
 	pack_1_title: "Web para tu negocio",
 	pack_1_desc:
-		"Tu presencia online profesional que destaca tu marca y atrae clientes - preparada para crecer contigo.",
+		"Hasta 5 páginas, código a mano, entregada en 2–3 semanas. 100/100 en Lighthouse. Hosting del primer año incluido.",
 	pack_1_cta: "Empezar ahora",
-	pack_1_feat_1: "Carga rápida en cualquier dispositivo",
-	pack_1_feat_2: "Hasta 5 páginas",
+	pack_1_feat_1: "100/100 en Google Lighthouse",
+	pack_1_feat_2: "Hasta 5 páginas a medida",
 	pack_1_feat_3: "Cambios hasta que estés feliz",
 	pack_1_feat_4: "Hosting incluido (1er año)",
-	pack_1_feat_5: "Diseño único para tu marca",
+	pack_1_feat_5: "SEO completo incluido",
 
 	pack_2_title: "Página de Ventas",
 	pack_2_desc:
@@ -126,31 +127,31 @@ export const es: Translations = {
 	pack_3_feat_5: "Soporte continuo",
 
 	faq_label: "FAQ",
-	faq_headline: "¿Preguntas? Tenemos respuestas.",
-	faq_q1: "¿Qué hacéis exactamente?",
+	faq_headline: "Preguntas frecuentes, respuestas directas.",
+	faq_q1: "¿Qué es Tactil?",
 	faq_a1:
-		"Creamos webs desde cero - sin plantillas, sin WordPress. Cada web está hecha específicamente para tu negocio, desde una página simple hasta una tienda online completa.",
-	faq_q2: "¿Cuánto tiempo tarda?",
+		"Tactil es un estudio de diseño y desarrollo web con base en Barcelona. Creamos webs desde cero — sin plantillas, sin WordPress. Cada web está hecha a medida para tu negocio, desde una página de ventas hasta una tienda online completa.",
+	faq_q2: "¿Cuánto tiempo tarda una web?",
 	faq_a2:
-		"Una página de ventas: 5–7 días. Una web completa: 2–3 semanas. Una tienda online: 3–4 semanas. Te damos fechas claras desde el principio.",
-	faq_q3: "¿La web será mía?",
+		"Una landing page: 5–7 días. Una web completa: 2–3 semanas. Una tienda online: 3–4 semanas. Recibes una fecha de entrega fija antes de empezar — sin plazos abiertos.",
+	faq_q3: "¿La web será 100% mía?",
 	faq_a3:
-		"Sí, 100% tuya desde el día 1. Te entregamos todos los archivos y accesos. Sin ataduras, sin costes ocultos.",
-	faq_q4: "¿Qué pasa después del lanzamiento?",
+		"Sí — propiedad total desde el primer día. Te entregamos todos los archivos fuente, acceso al hosting y control del dominio. Sin ataduras, sin tarifas recurrentes salvo que elijas un plan de mantenimiento.",
+	faq_q4: "¿Qué soporte tengo después del lanzamiento?",
 	faq_a4:
-		"Tienes 30 días de soporte gratuito. Después, planes de mantenimiento flexibles - o llámanos cuando necesites algo.",
-	faq_q5: "¿Trabajáis fuera de Barcelona?",
+		"Cada proyecto incluye 30 días de soporte gratuito post-lanzamiento. Después, ofrecemos planes de mantenimiento mensuales flexibles, o simplemente contáctanos cuando lo necesites.",
+	faq_q5: "¿Trabajáis con clientes fuera de Barcelona?",
 	faq_a5:
-		"Por supuesto. Trabajamos con clientes de toda España e internacionalmente. Todo funciona perfectamente online: videollamadas, email, WhatsApp.",
-	faq_q6: "¿Cómo sé que vais a hacer un buen trabajo?",
+		"Sí. Trabajamos con negocios de toda España, Europa e internacionalmente. Todo el proceso se gestiona en remoto: llamadas de estrategia, revisiones de diseño y entrega vía videollamada, email o WhatsApp.",
+	faq_q6: "¿Cómo sé que la calidad será buena?",
 	faq_a6:
-		"Mira nuestro portfolio. Hablamos claro, cumplimos plazos y te mostramos todo antes del lanzamiento. ¿No estás contento? Lo arreglamos.",
-	faq_q7: "¿Podemos hablar antes de decidir?",
+		"Todas las webs que entregamos obtienen 100/100 en Google Lighthouse en rendimiento, SEO y accesibilidad. Puedes ver nuestro portfolio con proyectos reales antes de decidir. Te mostramos el diseño completo antes de escribir una sola línea de código.",
+	faq_q7: "¿Puedo hablar con vosotros antes de comprometerme?",
 	faq_a7:
-		"Siempre. La primera charla es gratis, sin compromiso. Te explicamos qué necesitas, cuánto cuesta y cuánto tarda. Sin presión.",
-	faq_q8: "¿Usáis WordPress o plantillas?",
+		"Sí — y te lo recomendamos. La primera llamada de estrategia es totalmente gratuita y sin compromiso. Te explicamos qué necesitas, cuánto cuesta y cuánto tarda. Sin presión comercial.",
+	faq_q8: "¿Usáis WordPress, Wix o plantillas?",
 	faq_a8:
-		"Nunca. Construimos cada web desde cero con código propio - más rápida, más segura y perfectamente adaptada a tu marca.",
+		"Nunca. Cada web se construye desde cero con código propio. Eso significa tiempos de carga más rápidos, mayor seguridad, sin conflictos de plugins y un sitio perfectamente adaptado a tu marca — no limitado por una plantilla.",
 
 	contact_label: "Contacto",
 	contact_headline: "¿Hablamos de tu negocio?",
@@ -184,6 +185,8 @@ export const es: Translations = {
 	form_success: "¡Mensaje enviado! Te responderemos pronto.",
 	form_error: "Error al enviar. Inténtalo de nuevo.",
 
-	footer_tagline: "Si tu negocio existe, merece una gran web.",
-	footer_copyright: "© 2026 Tactil. Todos los derechos reservados.",
+	footer_tagline:
+		"Cada día sin una gran web es un cliente que gana tu competencia.",
+	footer_copyright:
+		"© 2025 Tactil Studio · Barcelona. Todos los derechos reservados.",
 };

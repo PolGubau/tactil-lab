@@ -6,12 +6,12 @@ export const en: Translations = {
 	nav_prices: "Prices",
 	nav_contact: "Contact",
 
-	hero_eyebrow: "Web Design & Development",
-	hero_title: "Your business can attract",
-	hero_accent: "more customers.",
+	hero_eyebrow: "Web Design & Development · Barcelona",
+	hero_title: "Custom websites that win",
+	hero_accent: "more clients.",
 	hero_description:
-		"We create websites that work for you 24/7. Clean design, clear strategy, real results. No tech jargon - just growth.",
-	cta_primary: "Get in touch",
+		"Hand-coded in Barcelona. Delivered in 7 days. 100/100 on Google. 50+ businesses growing — no templates, no WordPress, just results.",
+	cta_primary: "Start your project",
 	cta_secondary: "See our work",
 
 	marquee_items: [
@@ -28,44 +28,44 @@ export const en: Translations = {
 	],
 
 	features_label: "What we do",
-	features_headline: "Made for",
-	features_headline_accent: "real results.",
+	features_headline: "Built for",
+	features_headline_accent: "real growth.",
 	scroll_hint: "Scroll to explore",
-	feature_1_title: "Design that attracts customers",
+	feature_1_title: "Design that earns trust in seconds",
 	feature_1_desc:
-		'A beautiful website builds trust instantly. We craft visuals that make your clients say "this is the one" - and book you.',
+		"Visitors form an opinion in 50 milliseconds. We craft visuals that make your clients say 'this is the one' — and book you on the spot.",
 	feature_1_tag: "Design",
-	feature_2_title: "Built just for your business",
+	feature_2_title: "Zero templates. 100% your brand.",
 	feature_2_desc:
-		"No generic templates. Every page is built around your brand, your customers, and your goals - nothing less.",
+		"No themes, no drag-and-drop. Every page is hand-coded for your brand, your audience, and your goals — so you stand out instead of blending in.",
 	feature_2_tag: "Development",
-	feature_3_title: "Perfect on every screen",
+	feature_3_title: "Flawless on every device",
 	feature_3_desc:
-		"Whether on a phone, tablet, or desktop, your website looks flawless. Your clients browse everywhere - we make sure you shine everywhere.",
+		"67% of web traffic is mobile. Your site looks and performs perfectly on every screen — so you never lose a client to a broken layout.",
 	feature_3_tag: "Responsive",
-	feature_4_title: "Fast. Because slow sites lose clients",
+	feature_4_title: "Fast enough to rank on Google",
 	feature_4_desc:
-		"A 1-second delay costs 7% in conversions. Your site loads instantly, ranks higher on Google, and keeps visitors from leaving.",
+		"A 1-second delay costs 7% in conversions. Every site we build scores 100/100 on Google Lighthouse — out of the box, every time.",
 	feature_4_tag: "Performance",
 
 	process_label: "How it works",
-	process_headline: "From idea to live in days",
+	process_headline: "From brief to live in 7 days",
 	step_1_num: "01",
-	step_1_title: "Free consultation",
+	step_1_title: "Free strategy call",
 	step_1_desc:
-		"We talk about your business, your goals, and what you need. No commitment, no tech jargon.",
+		"We learn your business, your goals, and your customers. No commitment, no tech jargon — just clarity.",
 	step_2_num: "02",
-	step_2_title: "We design your vision",
+	step_2_title: "Design preview",
 	step_2_desc:
-		"You see exactly how your site will look before we build a single line of code. Revisions until you love it.",
+		"You see exactly how your site will look before a single line of code is written. Revisions until you love it.",
 	step_3_num: "03",
-	step_3_title: "We build it",
+	step_3_title: "We build & optimise",
 	step_3_desc:
-		"Custom code, fast performance, and full SEO setup. Ready in days, not months.",
+		"Custom code, 100/100 Lighthouse performance, and full SEO setup. Ready in days, not months.",
 	step_4_num: "04",
-	step_4_title: "Launch & grow",
+	step_4_title: "Launch + 30 days support",
 	step_4_desc:
-		"30 days of free support after launch. We're there if anything needs tweaking.",
+		"We go live together. Then 30 days of free support — we're there if anything needs tweaking.",
 
 	projects_label: "Our work",
 	projects_headline: "Projects that generate results",
@@ -90,67 +90,68 @@ export const en: Translations = {
 	stat_6_label: "Response time",
 
 	pricing_label: "Pricing",
-	pricing_headline: "Clear prices, real results",
-	pricing_subtitle: "No surprises. Choose the plan that fits your business.",
+	pricing_headline: "Transparent pricing. No surprises.",
+	pricing_subtitle:
+		"Every project includes a fixed price and a fixed delivery date — agreed upfront.",
 	per_project: "/ project",
 	popular: "Most popular",
 
 	pack_1_title: "Business Website",
 	pack_1_desc:
-		"A professional online presence that highlights your brand and attracts customers - ready to grow with you.",
+		"Up to 5 pages, hand-coded, delivered in 2–3 weeks. 100/100 Lighthouse. First-year hosting included.",
 	pack_1_cta: "Start now",
-	pack_1_feat_1: "Loads fast on any device",
-	pack_1_feat_2: "Up to 5 pages",
+	pack_1_feat_1: "100/100 Google Lighthouse score",
+	pack_1_feat_2: "Up to 5 custom pages",
 	pack_1_feat_3: "Revisions until you're happy",
 	pack_1_feat_4: "Hosting included (1st year)",
-	pack_1_feat_5: "Unique design for your brand",
+	pack_1_feat_5: "Full SEO setup included",
 
 	pack_2_title: "Landing Page",
 	pack_2_desc:
-		"Ready in 7 days. One powerful page focused 100% on getting clients. Perfect for launches and promotions.",
+		"One high-converting page, delivered in 7 days. Built to turn visitors into clients — not just look good.",
 	pack_2_cta: "Start now",
-	pack_2_feat_1: "Optimized to convert",
-	pack_2_feat_2: "All-in-one page",
-	pack_2_feat_3: "Revisions until it works",
+	pack_2_feat_1: "Conversion-optimised layout",
+	pack_2_feat_2: "Delivered in 7 days",
+	pack_2_feat_3: "Revisions until it converts",
 	pack_2_feat_4: "Hosting included",
-	pack_2_feat_5: "Contact form included",
+	pack_2_feat_5: "Contact form + analytics",
 
-	pack_3_title: "Custom",
+	pack_3_title: "Custom Project",
 	pack_3_desc:
-		"Online store, booking system, web platform - whatever your business needs, we build it.",
+		"E-commerce, booking systems, web apps — scoped to your exact requirements with a fixed price and timeline.",
 	pack_3_cta: "Let's talk",
-	pack_3_feat_1: "Online stores that sell",
+	pack_3_feat_1: "E-commerce & online stores",
 	pack_3_feat_2: "Booking & appointment systems",
-	pack_3_feat_3: "Whatever your business needs",
-	pack_3_feat_4: "Integrations with your tools",
-	pack_3_feat_5: "Ongoing support",
+	pack_3_feat_3: "Custom web applications",
+	pack_3_feat_4: "Third-party integrations",
+	pack_3_feat_5: "Ongoing support & maintenance",
 
 	faq_label: "FAQ",
-	faq_headline: "Questions? We have answers.",
-	faq_q1: "What exactly do you do?",
+	faq_headline: "Common questions, straight answers.",
+	faq_q1: "What does Tactil do?",
 	faq_a1:
-		"We build websites from scratch - no templates, no WordPress. Every site is made specifically for your business, from a simple page to a full online store.",
-	faq_q2: "How long does it take?",
+		"Tactil is a custom web design and development studio based in Barcelona. We build websites from scratch — no templates, no WordPress. Every site is hand-coded for your specific business, from a single landing page to a full e-commerce platform.",
+	faq_q2: "How long does a website take?",
 	faq_a2:
-		"A landing page is ready in 5–7 days. A full business site in 2–3 weeks. An online store in 3–4 weeks. We give you clear dates from the start.",
-	faq_q3: "Will I own my website?",
+		"A landing page is delivered in 5–7 days. A full business website in 2–3 weeks. An online store in 3–4 weeks. You get a fixed delivery date before we start — no open-ended timelines.",
+	faq_q3: "Will I own my website after it's built?",
 	faq_a3:
-		"Yes, 100% yours from day one. We hand over all files and access. No lock-in, no hidden fees.",
-	faq_q4: "What happens after launch?",
+		"Yes — 100% ownership from day one. We hand over all source files, hosting access, and domain control. No lock-in, no recurring fees unless you choose a maintenance plan.",
+	faq_q4: "What support do I get after launch?",
 	faq_a4:
-		"You get 30 days of free support. After that, flexible maintenance plans - or just call us when you need something.",
-	faq_q5: "Do you work outside Barcelona?",
+		"Every project includes 30 days of free post-launch support. After that, we offer flexible monthly maintenance plans, or you can simply reach out when you need something.",
+	faq_q5: "Do you work with clients outside Barcelona?",
 	faq_a5:
-		"Absolutely. We work with clients across Spain and internationally. Everything runs smoothly online - video calls, email, WhatsApp.",
-	faq_q6: "How do I know you'll do a good job?",
+		"Yes. We work with businesses across Spain, Europe, and internationally. The entire process runs remotely — strategy calls, design reviews, and delivery all happen online via video call, email, or WhatsApp.",
+	faq_q6: "How do I know the quality will be good?",
 	faq_a6:
-		"Check our portfolio. We speak clearly, meet deadlines, and show you everything before launch. Not happy? We fix it.",
-	faq_q7: "Can we talk before I decide?",
+		"Every site we deliver scores 100/100 on Google Lighthouse for performance, SEO, and accessibility. You can review our portfolio and see working projects before deciding. We show you the full design before writing a line of code.",
+	faq_q7: "Can I talk to you before committing?",
 	faq_a7:
-		"Always. First conversation is free, no commitment. We explain what you need, what it costs, and how long it takes. No pressure.",
-	faq_q8: "Do you use WordPress or templates?",
+		"Yes — and we encourage it. The first strategy call is completely free with no commitment. We'll walk you through what you need, what it costs, and how long it takes. No sales pressure.",
+	faq_q8: "Do you use WordPress, Wix, or templates?",
 	faq_a8:
-		"Never. We build every site from scratch with custom code - faster, more secure, and perfectly tailored to your brand.",
+		"Never. Every site is built from scratch with custom code. That means faster load times, better security, no plugin conflicts, and a site that's perfectly tailored to your brand — not constrained by a theme.",
 
 	contact_label: "Contact",
 	contact_headline: "Let's talk about your project",
@@ -183,6 +184,7 @@ export const en: Translations = {
 	form_success: "Message sent! We'll reply soon.",
 	form_error: "Error sending. Please try again.",
 
-	footer_tagline: "If your business exists, it deserves a great website.",
-	footer_copyright: "© 2025 Tactil. All rights reserved.",
+	footer_tagline:
+		"Every day without a great website is a client your competitor wins.",
+	footer_copyright: "© 2025 Tactil Studio · Barcelona. All rights reserved.",
 };
