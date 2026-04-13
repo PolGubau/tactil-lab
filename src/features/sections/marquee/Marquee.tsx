@@ -8,13 +8,11 @@ export default function Marquee() {
   const row2 = [...t.marquee_items, ...t.marquee_items]
 
   return (
-    <div className='py-5 border-y overflow-hidden select-none'
-      style={{ borderColor: 'var(--border-soft)', background: 'var(--bg-subtle)' }}>
+    <div className='py-5 border-y border-soft bg-tint overflow-hidden select-none'>
       {/* Row 1: scrolls right → left */}
       <div className='marquee-track flex whitespace-nowrap mb-2'>
         {row1.map((item, i) => (
-          <span key={i} className='flex items-center gap-4 px-5 text-[10px] tracking-[0.22em] uppercase font-semibold flex-shrink-0'
-            style={{ color: 'var(--fg-muted)' }}>
+          <span key={i} className='flex items-center gap-4 px-5 text-[10px] tracking-[0.22em] uppercase font-semibold flex-shrink-0 text-muted'>
             {item}
             <span className='w-1.5 h-1.5 rounded-full flex-shrink-0'
               style={{ background: i % 2 === 0 ? 'var(--accent)' : 'rgba(26,23,20,0.2)' }} />
@@ -24,11 +22,9 @@ export default function Marquee() {
       {/* Row 2: scrolls left → right */}
       <div className='marquee-track-reverse flex whitespace-nowrap'>
         {row2.map((item, i) => (
-          <span key={i} className='flex items-center gap-4 px-5 text-[10px] tracking-[0.22em] uppercase font-medium flex-shrink-0'
-            style={{ color: 'var(--fg-subtle)' }}>
+          <span key={i} className='flex items-center gap-4 px-5 text-[10px] tracking-[0.22em] uppercase font-medium flex-shrink-0 text-subtle'>
             {item}
-            <span className='w-1 h-1 rounded-full flex-shrink-0'
-              style={{ border: '1px solid var(--border)' }} />
+            <span className='w-1 h-1 rounded-full flex-shrink-0 border border-edge' />
           </span>
         ))}
       </div>

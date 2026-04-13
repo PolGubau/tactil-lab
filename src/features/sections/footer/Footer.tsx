@@ -2,6 +2,7 @@
 import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ChevronRight } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -58,9 +59,10 @@ export default function Footer() {
             <div data-f-cta className='flex flex-col gap-4 md:items-end opacity-0'>
               <a
                 href='#contact'
-                className='inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm tracking-wide transition-all duration-200 bg-ink text-accent hover:opacity-80'
+                className='inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm tracking-wide transition-all duration-200 bg-ink text-accent hover:opacity-80 w-fit'
               >
                 {t.cta_primary}
+                <ChevronRight size={18} />
               </a>
             </div>
           </div>

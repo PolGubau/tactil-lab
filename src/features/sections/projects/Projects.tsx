@@ -28,8 +28,8 @@ function ProjectCard({ project, summary, index }: { project: ReturnType<typeof g
             sizes='(max-width: 768px) 100vw, 50vw' />
         )}
         <div className='absolute inset-0 bg-accent/10 transition-opacity duration-300' style={{ opacity: hovered ? 1 : 0 }} />
-        <span className='absolute top-4 left-4 text-[10px] tracking-widest font-bold rounded-full px-2.5 py-1'
-          style={{ background: 'rgba(247,244,239,0.88)', color: 'var(--fg-muted)' }}>
+        <span className='absolute top-4 left-4 text-[10px] tracking-widest font-bold rounded-full px-2.5 py-1 text-muted'
+          style={{ background: 'rgba(247,244,239,0.88)' }}>
           {String(index + 1).padStart(2, '0')}
         </span>
         <span className='absolute top-4 right-4 text-[10px] tracking-[0.18em] uppercase font-bold px-2.5 py-1 rounded bg-accent text-ink'>
@@ -79,7 +79,7 @@ export default function Projects() {
           <div>
             <span className='pill mb-4 block w-fit'>{t.projects_label}</span>
             <h2 className='text-4xl md:text-6xl font-black leading-[0.95] tracking-tight'>{t.projects_headline}</h2>
-            <p className='mt-3 text-base' style={{ color: 'var(--fg-muted)' }}>{t.projects_subtitle}</p>
+            <p className='mt-3 text-base text-muted'>{t.projects_subtitle}</p>
           </div>
         </div>
 

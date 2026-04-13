@@ -1,8 +1,8 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useTranslation } from '@/shared/i18n/hooks'
+import { useEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -42,7 +42,7 @@ export default function Pricing() {
         <div className='pricing-header text-center mb-16 opacity-0'>
           <span className='pill mx-auto mb-4 block w-fit'>{t.pricing_label}</span>
           <h2 className='text-4xl md:text-6xl font-black mb-4 tracking-tight'>{t.pricing_headline}</h2>
-          <p className='max-w-lg mx-auto text-base' style={{ color: 'var(--fg-muted)' }}>{t.pricing_subtitle}</p>
+          <p className='max-w-lg mx-auto text-base text-muted'>{t.pricing_subtitle}</p>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
@@ -56,8 +56,7 @@ export default function Pricing() {
                 color: plan.isPopular ? 'var(--bg)' : 'var(--fg)',
               }}>
               {plan.isPopular && (
-                <div className='absolute -top-3 left-6 px-4 py-1 text-[10px] font-bold tracking-widest uppercase rounded-full'
-                  style={{ background: 'var(--accent)', color: '#fff' }}>{t.popular}</div>
+                <div className='absolute -top-3 left-6 bg-accent text-fg px-4 py-1 text-[10px] font-bold tracking-widest uppercase rounded-full'>{t.popular}</div>
               )}
               <div className='mb-7 pb-7 border-b' style={{ borderColor: plan.isPopular ? 'rgba(247,244,239,0.12)' : 'var(--border-soft)' }}>
                 <h3 className='text-xl font-black mb-2'>{plan.title}</h3>
@@ -71,7 +70,7 @@ export default function Pricing() {
                     </div>
                   </div>
                 ) : (
-                  <div className='text-3xl font-black' style={{ color: 'var(--accent)' }}>Custom</div>
+                  <div className='text-3xl font-black text-accent'>Custom</div>
                 )}
               </div>
               <ul className='flex flex-col gap-3 mb-8 flex-1'>

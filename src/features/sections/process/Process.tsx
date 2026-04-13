@@ -52,8 +52,8 @@ export default function Process() {
           <h2 className='text-4xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-xl'>{t.process_headline}</h2>
         </div>
         <div className='relative hidden lg:block mb-4'>
-          <div className='h-px w-full overflow-hidden' style={{ background: 'var(--border)' }}>
-            <div data-p-line className='h-full w-full origin-left' style={{ background: 'var(--accent)' }} />
+          <div className='h-px w-full overflow-hidden bg-edge'>
+            <div data-p-line className='h-full w-full origin-left bg-accent' />
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
@@ -71,10 +71,10 @@ export default function Process() {
               </div>
               <div>
                 <h3 className='text-lg font-black mb-2'>{step.title}</h3>
-                <p className='text-sm leading-relaxed' style={{ color: 'var(--fg-muted)' }}>{step.desc}</p>
+                <p className='text-sm leading-relaxed text-muted'>{step.desc}</p>
               </div>
               {step.accent && (
-                <div className='absolute top-0 right-0 w-1 h-full' style={{ background: 'var(--accent)', opacity: 0.5 }} />
+                <div className='absolute top-0 right-0 w-1 h-full bg-accent opacity-50' />
               )}
             </div>
           ))}

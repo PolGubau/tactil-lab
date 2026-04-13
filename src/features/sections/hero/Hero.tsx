@@ -116,7 +116,7 @@ export default function Hero() {
           <div>
             <div data-h-eyebrow className='opacity-0 flex items-center gap-3 mb-7'>
               <span className='text-[10px] tracking-[0.22em] uppercase font-bold px-3 py-1.5 rounded-full bg-accent text-ink'>Studio</span>
-              <span className='text-[11px] text-muted tracking-wide'>Barcelona · Est. 2024</span>
+              <span className='text-[11px] text-muted tracking-wide'>Barcelona · Est. 2026</span>
             </div>
 
             <h1 className='font-black leading-[0.88] mb-8 md:mb-10' style={{ fontSize: 'clamp(2.4rem, 4.8vw, 6.5rem)', letterSpacing: '-0.04em' }}>

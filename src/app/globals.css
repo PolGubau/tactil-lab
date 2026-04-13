@@ -14,12 +14,6 @@
 	--border: rgba(26, 23, 20, 0.1);
 	--border-soft: rgba(26, 23, 20, 0.06);
 
-	/* Dark palette - kept ready but inactive */
-	--dark-bg: #0d0c0a;
-	--dark-fg: #f0ede8;
-	--dark-card-bg: #161412;
-	--dark-border: rgba(240, 237, 232, 0.08);
-
 	/* Radius scale */
 	--r-sm: 8px;
 	--r-md: 16px;
@@ -27,15 +21,22 @@
 	--r-xl: 36px;
 	--r-full: 9999px;
 
-	/* Shadows */
-	--shadow-sm: 0 2px 8px rgba(26, 23, 20, 0.06);
-	--shadow-md: 0 8px 32px rgba(26, 23, 20, 0.09);
-	--shadow-lg: 0 20px 60px rgba(26, 23, 20, 0.12);
-	--shadow-acc: 0 8px 40px rgba(196, 235, 54, 0.28);
+	/* Shadows (base tokens — prefixed to avoid Tailwind collision) */
+	--elv-sm: 0 2px 8px rgba(26, 23, 20, 0.06);
+	--elv-md: 0 8px 32px rgba(26, 23, 20, 0.09);
+	--elv-lg: 0 20px 60px rgba(26, 23, 20, 0.12);
+	--elv-acc: 0 8px 40px rgba(196, 235, 54, 0.28);
 
 	/* Easing */
 	--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 	--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.dark {
+	--bg: #0d0c0a;
+	--fg: #f0ede8;
+	--card-bg: #161412;
+	--border: rgba(240, 237, 232, 0.08);
 }
 
 /* ─── Tailwind theme mapping ─────────────────────────────────── */
@@ -61,9 +62,19 @@
 	--color-accent: var(--accent);
 	--color-accent-soft: var(--accent-soft);
 
+	/* Semantic */
+	--color-background: var(--bg);
+	--color-foreground: var(--fg);
+
 	/* Borders */
 	--color-edge: var(--border);
 	--color-soft: var(--border-soft);
+
+	/* Shadows */
+	--shadow-sm: var(--elv-sm);
+	--shadow-md: var(--elv-md);
+	--shadow-lg: var(--elv-lg);
+	--shadow-acc: var(--elv-acc);
 
 	/* Radius */
 	--radius-sm: var(--r-sm);

@@ -1,8 +1,8 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
+import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useTranslation } from '@/shared/i18n/hooks'
+import { useEffect, useRef, useState } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -20,7 +20,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   }, [open])
 
   return (
-    <div className='border-b transition-colors duration-200' style={{ borderColor: 'var(--border-soft)' }}>
+    <div className='border-b border-soft transition-colors duration-200'>
       <button onClick={() => setOpen(!open)}
         className='w-full text-left py-5 flex items-start justify-between gap-6 transition-colors duration-200'
         style={{ color: open ? 'var(--accent)' : 'var(--fg)' }}>
@@ -29,7 +29,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           style={{ transform: open ? 'rotate(45deg)' : 'none', borderColor: open ? 'var(--accent)' : 'var(--border)', color: 'var(--accent)' }}>+</span>
       </button>
       <div ref={bodyRef} style={{ height: 0, overflow: 'hidden' }}>
-        <p className='pb-5 text-sm leading-relaxed max-w-2xl' style={{ color: 'var(--fg-muted)' }}>{answer}</p>
+        <p className='pb-5 text-sm leading-relaxed max-w-2xl text-muted'>{answer}</p>
       </div>
     </div>
   )
@@ -54,7 +54,7 @@ export default function FAQ() {
   }, [])
 
   return (
-    <section ref={sectionRef} className='opacity-0' style={{ padding: 'clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,5rem)', background: 'var(--bg-subtle)' }}>
+    <section id='faq' ref={sectionRef} className='opacity-0 bg-tint' style={{ padding: 'clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,5rem)' }}>
       <div className='max-w-7xl mx-auto grid md:grid-cols-2 gap-14 md:gap-20'>
         <div className='md:sticky top-32 self-start'>
           <span className='pill mb-4 block w-fit'>{t.faq_label}</span>

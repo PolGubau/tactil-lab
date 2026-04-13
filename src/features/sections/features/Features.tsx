@@ -18,14 +18,15 @@ interface FeatureCardData {
   span: string
 }
 
-function ProjectImage({ src, alt, className = '' }: { src: string; alt: string; className?: string }) {
+// Fixed-height image box — prevents aspect-ratio distortion across different column spans
+function ProjectImage({ src, alt, position = 'object-top' }: { src: string; alt: string; position?: string }) {
   return (
-    <div className={`relative overflow-hidden rounded-xl mt-auto ${className}`} style={{ aspectRatio: '16/9' }}>
+    <div className='relative overflow-hidden rounded-xl mt-4' style={{ height: '180px' }}>
       <Image
         src={src}
         alt={alt}
         fill
-        className='object-cover object-top transition-transform duration-700 group-hover:scale-105'
+        className={`object-cover ${position} transition-transform duration-700 group-hover:scale-105`}
         sizes='(max-width: 768px) 100vw, 50vw'
       />
     </div>
@@ -36,10 +37,10 @@ function BentoCard({ feat }: { feat: FeatureCardData }) {
   return (
     <div
       data-f-card
-      className={`feat-card group flex flex-col p-7 md:p-9 min-h-80 bg-card rounded-xl border border-soft shadow-sm ${feat.span}`}
+      className={`feat-card group flex flex-col p-7 md:p-9 bg-card rounded-xl border border-soft shadow-sm ${feat.span}`}
     >
       {/* Header */}
-      <div className='flex items-start justify-between mb-6'>
+      <div className='flex items-start justify-between'>
         <div className='flex items-center gap-3'>
           <div className='w-10 h-10 rounded-xl flex items-center justify-center bg-accent text-ink'>
             {feat.icon}
@@ -53,11 +54,11 @@ function BentoCard({ feat }: { feat: FeatureCardData }) {
         </span>
       </div>
 
-      {/* Real project image */}
+      {/* Image — fixed height keeps all cards visually consistent */}
       {feat.visual}
 
       {/* Text */}
-      <div className='mt-6'>
+      <div className='mt-6 flex-1'>
         <h3 className='text-xl md:text-2xl font-black leading-[1.1] mb-2'>{feat.title}</h3>
         <p className='text-sm leading-relaxed text-muted'>{feat.description}</p>
       </div>
@@ -77,24 +78,14 @@ export default function Features() {
       title: t.feature_1_title, description: t.feature_1_desc,
       span: 'col-span-1 md:col-span-2',
       icon: <Palette size={18} />,
-      visual: (
-        <ProjectImage
-          src='/projects/acetate/landing.webp'
-          alt='Acetate — custom vinyl ecommerce design'
-        />
-      ),
+      visual: <ProjectImage src='/projects/acetate/landing.webp' alt='Acetate ecommerce design' />,
     },
     {
       number: '02', tag: t.feature_2_tag,
       title: t.feature_2_title, description: t.feature_2_desc,
       span: 'col-span-1',
       icon: <Code2 size={18} />,
-      visual: (
-        <ProjectImage
-          src='/projects/novahair/calendar-filters.webp'
-          alt='NovaHair — admin panel development'
-        />
-      ),
+      visual: <ProjectImage src='/projects/novahair/calendar-filters.webp' alt='NovaHair admin panel' />,
     },
     {
       number: '03', tag: t.feature_3_tag,
@@ -102,23 +93,25 @@ export default function Features() {
       span: 'col-span-1',
       icon: <Smartphone size={18} />,
       visual: (
-        <div className='relative overflow-hidden rounded-xl mt-auto flex items-end gap-2' style={{ aspectRatio: '16/9' }}>
-          <div className='relative flex-1 h-full overflow-hidden rounded-xl'>
+        <div className='flex gap-2 mt-4 overflow-hidden rounded-xl' style={{ height: '180px' }}>
+          {/* Desktop screenshot — wider */}
+          <div className='relative flex-1 overflow-hidden rounded-l-xl'>
             <Image
               src='/projects/acetate/about.webp'
               alt='Desktop view'
               fill
               className='object-cover object-top transition-transform duration-700 group-hover:scale-105'
-              sizes='30vw'
+              sizes='20vw'
             />
           </div>
-          <div className='relative overflow-hidden rounded-xl shrink-0' style={{ width: '38%', aspectRatio: '9/16' }}>
+          {/* Mobile screenshot — narrower */}
+          <div className='relative overflow-hidden rounded-r-xl' style={{ width: '36%' }}>
             <Image
               src='/projects/novahair/book-appointment.webp'
               alt='Mobile view'
               fill
               className='object-cover object-top transition-transform duration-700 group-hover:scale-105'
-              sizes='15vw'
+              sizes='12vw'
             />
           </div>
         </div>
@@ -129,12 +122,7 @@ export default function Features() {
       title: t.feature_4_title, description: t.feature_4_desc,
       span: 'col-span-1 md:col-span-2',
       icon: <Zap size={18} />,
-      visual: (
-        <ProjectImage
-          src='/projects/novahair/metrics.webp'
-          alt='NovaHair — performance metrics dashboard'
-        />
-      ),
+      visual: <ProjectImage src='/projects/novahair/metrics.webp' alt='Performance metrics dashboard' position='object-center' />,
     },
   ]
 
@@ -143,8 +131,7 @@ export default function Features() {
       const cards = sectionRef.current?.querySelectorAll('[data-f-card]')
       if (!cards) return
       cards.forEach((card, i) => {
-        const fromLeft = i % 2 === 0
-        gsap.fromTo(card, { opacity: 0, y: 48, x: fromLeft ? -20 : 20 }, {
+        gsap.fromTo(card, { opacity: 0, y: 48, x: i % 2 === 0 ? -20 : 20 }, {
           opacity: 1, y: 0, x: 0, duration: 0.85, ease: 'power3.out',
           scrollTrigger: { trigger: card, start: 'top 88%', toggleActions: 'play none none reverse' },
           delay: (i % 2) * 0.12,
