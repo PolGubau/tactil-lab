@@ -124,7 +124,6 @@ interface FeatureCardData {
   title: string
   description: string
   tag: string
-  color: string
   icon: React.ReactNode
   illustration: React.ReactNode
   /** grid span class - controls bento layout */
@@ -142,19 +141,17 @@ function BentoCard({ feat }: { feat: FeatureCardData }) {
       {/* Header */}
       <div className='flex items-start justify-between mb-4'>
         <div className='flex items-center gap-3'>
-          <div className='w-10 h-10 rounded-xl flex items-center justify-center'
-            style={{ background: `${feat.color}18`, color: feat.color }}>
+          {/* Icon: accent bg + dark icon — always readable */}
+          <div className='w-10 h-10 rounded-xl flex items-center justify-center bg-accent text-ink'>
             {feat.icon}
           </div>
-          <span
-            className='text-[9px] tracking-[0.22em] uppercase font-bold px-3 py-1.5 rounded-full'
-            style={{ background: feat.color, color: '#1A1714' }}
-          >
+          {/* Tag: accent bg + dark text — always readable */}
+          <span className='text-[9px] tracking-[0.22em] uppercase font-bold px-3 py-1.5 rounded-full bg-accent text-ink'>
             {feat.tag}
           </span>
         </div>
-        <span className='text-6xl font-black leading-none select-none'
-          style={{ color: feat.color, opacity: 0.1 }}>
+        {/* Number: dark ink at very low opacity — subtle, never lime-on-white */}
+        <span className='text-6xl font-black leading-none select-none text-ink opacity-[0.07]'>
           {feat.number}
         </span>
       </div>
@@ -172,8 +169,8 @@ function BentoCard({ feat }: { feat: FeatureCardData }) {
         </p>
       </div>
 
-      {/* Bottom accent line */}
-      <div className='h-px w-10 mt-5' style={{ background: feat.color, opacity: 0.5 }} />
+      {/* Bottom accent line — lime as decoration, not text */}
+      <div className='h-px w-10 mt-5 bg-accent opacity-60' />
     </div>
   )
 }
@@ -184,34 +181,36 @@ export default function Features() {
   const t = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
 
+  const ACCENT = '#c4eb36'
+
   const features: FeatureCardData[] = [
     {
-      number: '01', tag: t.feature_1_tag, color: '#c4eb36',
+      number: '01', tag: t.feature_1_tag,
       title: t.feature_1_title, description: t.feature_1_desc,
       span: 'col-span-1 md:col-span-2',
       icon: <Palette size={18} />,
-      illustration: <DesignIllustration color='#c4eb36' />,
+      illustration: <DesignIllustration color={ACCENT} />,
     },
     {
-      number: '02', tag: t.feature_2_tag, color: '#0097B2',
+      number: '02', tag: t.feature_2_tag,
       title: t.feature_2_title, description: t.feature_2_desc,
       span: 'col-span-1',
       icon: <Code2 size={18} />,
-      illustration: <DevIllustration color='#0097B2' />,
+      illustration: <DevIllustration color={ACCENT} />,
     },
     {
-      number: '03', tag: t.feature_3_tag, color: '#7C5CBF',
+      number: '03', tag: t.feature_3_tag,
       title: t.feature_3_title, description: t.feature_3_desc,
       span: 'col-span-1',
       icon: <Smartphone size={18} />,
-      illustration: <ResponsiveIllustration color='#7C5CBF' />,
+      illustration: <ResponsiveIllustration color={ACCENT} />,
     },
     {
-      number: '04', tag: t.feature_4_tag, color: '#1A9B6C',
+      number: '04', tag: t.feature_4_tag,
       title: t.feature_4_title, description: t.feature_4_desc,
       span: 'col-span-1 md:col-span-2',
       icon: <Zap size={18} />,
-      illustration: <PerformanceIllustration color='#1A9B6C' />,
+      illustration: <PerformanceIllustration color={ACCENT} />,
     },
   ]
 
