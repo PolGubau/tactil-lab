@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 
-// Filmstrip — duplicated for seamless infinite loop
+// Filmstrip - duplicated for seamless infinite loop
 const STRIP = [
   { src: '/projects/novahair/landing.webp', label: 'Nova Hair' },
   { src: '/projects/acetate/landing.webp', label: 'Acetate' },
@@ -23,7 +23,7 @@ export default function Hero() {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ delay: 0.12 })
 
-      // Word-by-word rise — the Awwwards signature move
+      // Word-by-word rise - the Awwwards signature move
       tl.fromTo('[data-h-word]',
         { y: '108%' },
         { y: '0%', duration: 1, stagger: 0.06, ease: 'power4.out' },
@@ -62,7 +62,7 @@ export default function Hero() {
           className='font-black leading-[0.88] tracking-tight mb-10 md:mb-14'
           style={{ fontSize: 'clamp(2.4rem, 5.5vw, 7rem)', letterSpacing: '-0.04em' }}
         >
-          {/* Line 1 — main title words */}
+          {/* Line 1 - main title words */}
           <span className='flex flex-wrap gap-x-[0.22em]'>
             {titleWords.map((word, i) => (
               <span key={`t-${i}-${word}`} className='overflow-hidden inline-block pb-[0.15em] mb-[-0.15em]'>
@@ -72,7 +72,7 @@ export default function Hero() {
               </span>
             ))}
           </span>
-          {/* Line 2 — accent words (lime) */}
+          {/* Line 2 - accent words (lime) */}
           <span className='flex flex-wrap gap-x-[0.22em] mt-1'>
             {accentWords.map((word, i) => (
               <span key={`a-${i}-${word}`} className='overflow-hidden inline-block pb-[0.15em] mb-[-0.15em]'>
@@ -123,7 +123,7 @@ export default function Hero() {
           style={{ background: 'linear-gradient(to left, var(--bg) 0%, transparent 100%)' }}
         />
 
-        {/* Track — duplicated for seamless loop */}
+        {/* Track - duplicated for seamless loop */}
         <div className='flex gap-4 w-max' style={{ animation: 'filmstrip 18s linear infinite' }}>
           {[...STRIP, ...STRIP, ...STRIP].map((item, i) => (
             <div

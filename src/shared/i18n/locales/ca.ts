@@ -6,12 +6,12 @@ export const ca: Translations = {
 	nav_prices: "Preus",
 	nav_contact: "Contacte",
 
-	hero_eyebrow: "Disseny Web & Desenvolupament",
-	hero_title: "El teu negoci pot atraure",
+	hero_eyebrow: "Disseny Web & Desenvolupament · Barcelona",
+	hero_title: "Webs a mida que aconsegueixen",
 	hero_accent: "més clients.",
 	hero_description:
-		"Creem webs que treballen per tu les 24h. Disseny net, estratègia clara, resultats reals. Sense tecnicismes - només creixement.",
-	cta_primary: "Parlem",
+		"Codi a mà des de Barcelona. Entregades en 7 dies. 100/100 a Google. 50+ negocis creixent - sense plantilles, sense WordPress, només resultats.",
+	cta_primary: "Comença el teu projecte",
 	cta_secondary: "Veure el nostre treball",
 
 	marquee_items: [
@@ -28,16 +28,16 @@ export const ca: Translations = {
 	],
 
 	features_label: "El que fem",
-	features_headline: "Fet per",
-	features_headline_accent: "resultats reals.",
+	features_headline: "Construït per",
+	features_headline_accent: "créixer de debò.",
 	scroll_hint: "Llisca per explorar",
-	feature_1_title: "Disseny que atrau clients",
+	feature_1_title: "Disseny que genera confiança en segons",
 	feature_1_desc:
-		'Una web bonica genera confiança al moment. Creem visuals que fan que els teus clients diguin "aquest és el que vull" - i et contractin.',
+		"Els visitants es formen una opinió en 50 mil·lisegons. Creem visuals que fan que els teus clients diguin 'aquest és el que vull' - i et contractin al moment.",
 	feature_1_tag: "Disseny",
-	feature_2_title: "Fet per al teu negoci",
+	feature_2_title: "Sense plantilles. 100% la teva marca.",
 	feature_2_desc:
-		"Sense plantilles genèriques. Cada pàgina és construïda al voltant de la teva marca, els teus clients i els teus objectius - res menys.",
+		"Sense temes, sense arrossegar i soltar. Cada pàgina és escrita a mà per a la teva marca, la teva audiència i els teus objectius - per destacar en comptes de passar desapercebut.",
 	feature_2_tag: "Desenvolupament",
 	feature_3_title: "Perfecte a qualsevol pantalla",
 	feature_3_desc:
@@ -49,7 +49,7 @@ export const ca: Translations = {
 	feature_4_tag: "Rendiment",
 
 	process_label: "Com funciona",
-	process_headline: "D'idea a publicada en dies",
+	process_headline: "De briefing a publicada en 7 dies",
 	step_1_num: "01",
 	step_1_title: "Consulta gratuïta",
 	step_1_desc:
@@ -127,10 +127,10 @@ export const ca: Translations = {
 	pack_3_feat_5: "Suport continu",
 
 	faq_label: "FAQ",
-	faq_headline: "Preguntes? Tenim respostes.",
-	faq_q1: "Què feu exactament?",
+	faq_headline: "Preguntes freqüents, respostes directes.",
+	faq_q1: "Què és Tactil?",
 	faq_a1:
-		"Creem webs des de zero - sense plantilles, sense WordPress. Cada web és feta específicament per al teu negoci, des d'una pàgina simple fins a una botiga online completa.",
+		"Tactil és un estudi de disseny i desenvolupament web amb base a Barcelona. Creem webs des de zero - sense plantilles, sense WordPress. Cada web és feta a mida per al teu negoci, des d'una pàgina de vendes fins a una botiga online completa.",
 	faq_q2: "Quant de temps tarda?",
 	faq_a2:
 		"Una pàgina de vendes: 5–7 dies. Una web completa: 2–3 setmanes. Una botiga online: 3–4 setmanes. Et donem dates clares des del principi.",
@@ -185,6 +185,8 @@ export const ca: Translations = {
 	form_success: "Missatge enviat! Et respondrem aviat.",
 	form_error: "Error en enviar. Torna-ho a provar.",
 
-	footer_tagline: "Si el teu negoci existeix, mereix una gran web.",
-	footer_copyright: "© 2025 Tactil. Tots els drets reservats.",
+	footer_tagline:
+		"Cada dia sense una gran web és un client que guanya la teva competència.",
+	footer_copyright:
+		"© 2025 Tactil Studio · Barcelona. Tots els drets reservats.",
 };

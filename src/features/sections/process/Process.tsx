@@ -2,9 +2,17 @@
 import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Code2, MessageCircle, PenTool, Rocket } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
+
+const STEP_ICONS = [
+  <MessageCircle key='msg' size={20} />,
+  <PenTool key='pen' size={20} />,
+  <Code2 key='code' size={20} />,
+  <Rocket key='rocket' size={20} />,
+]
 
 export default function Process() {
   const t = useTranslation()
@@ -42,12 +50,18 @@ export default function Process() {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
           {steps.map((step) => (
             <div key={step.num} className='process-step card opacity-0 p-7 md:p-8 flex flex-col gap-5'>
-              <span
-                className='text-5xl font-black leading-none select-none'
-                style={{ color: 'var(--accent)', opacity: step.accent ? 0.7 : 0.18 }}
-              >
-                {step.num}
-              </span>
+              <div className='flex items-center justify-between'>
+                <div className='w-10 h-10 rounded-xl flex items-center justify-center'
+                  style={{ background: step.accent ? 'var(--accent)' : 'var(--bg-subtle)', color: step.accent ? '#1A1714' : 'var(--fg-muted)' }}>
+                  {STEP_ICONS[steps.indexOf(step)]}
+                </div>
+                <span
+                  className='text-4xl font-black leading-none select-none'
+                  style={{ color: 'var(--accent)', opacity: step.accent ? 0.5 : 0.12 }}
+                >
+                  {step.num}
+                </span>
+              </div>
               <div>
                 <h3 className='text-lg font-black mb-2'>{step.title}</h3>
                 <p className='text-sm leading-relaxed' style={{ color: 'var(--fg-muted)' }}>{step.desc}</p>

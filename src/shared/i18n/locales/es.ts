@@ -10,7 +10,7 @@ export const es: Translations = {
 	hero_title: "Webs a medida que consiguen",
 	hero_accent: "más clientes.",
 	hero_description:
-		"Código a mano desde Barcelona. Entregadas en 7 días. 100/100 en Google. 50+ negocios creciendo — sin plantillas, sin WordPress, solo resultados.",
+		"Código a mano desde Barcelona. Entregadas en 7 días. 100/100 en Google. 50+ negocios creciendo - sin plantillas, sin WordPress, solo resultados.",
 	cta_primary: "Empieza tu proyecto",
 	cta_secondary: "Ver nuestro trabajo",
 
@@ -33,11 +33,11 @@ export const es: Translations = {
 	scroll_hint: "Desliza para explorar",
 	feature_1_title: "Diseño que genera confianza al instante",
 	feature_1_desc:
-		"Los visitantes se forman una opinión en 50 milisegundos. Creamos visuals que hacen que tus clientes digan 'este es el que quiero' — y te contraten al momento.",
+		"Los visitantes se forman una opinión en 50 milisegundos. Creamos visuals que hacen que tus clientes digan 'este es el que quiero' - y te contraten al momento.",
 	feature_1_tag: "Diseño",
 	feature_2_title: "Sin plantillas. 100% tu marca.",
 	feature_2_desc:
-		"Sin temas, sin arrastrar y soltar. Cada página está escrita a mano para tu marca, tu audiencia y tus objetivos — para que destaques en vez de pasar desapercibido.",
+		"Sin temas, sin arrastrar y soltar. Cada página está escrita a mano para tu marca, tu audiencia y tus objetivos - para que destaques en vez de pasar desapercibido.",
 	feature_2_tag: "Desarrollo",
 	feature_3_title: "Perfecto en cualquier dispositivo",
 	feature_3_desc:
@@ -92,7 +92,7 @@ export const es: Translations = {
 	pricing_label: "Precios",
 	pricing_headline: "Precios fijos. Sin sorpresas.",
 	pricing_subtitle:
-		"Cada proyecto incluye precio cerrado y fecha de entrega — pactados antes de empezar.",
+		"Cada proyecto incluye precio cerrado y fecha de entrega - pactados antes de empezar.",
 	per_project: "/ proyecto",
 	popular: "Más popular",
 
@@ -130,13 +130,13 @@ export const es: Translations = {
 	faq_headline: "Preguntas frecuentes, respuestas directas.",
 	faq_q1: "¿Qué es Tactil?",
 	faq_a1:
-		"Tactil es un estudio de diseño y desarrollo web con base en Barcelona. Creamos webs desde cero — sin plantillas, sin WordPress. Cada web está hecha a medida para tu negocio, desde una página de ventas hasta una tienda online completa.",
+		"Tactil es un estudio de diseño y desarrollo web con base en Barcelona. Creamos webs desde cero - sin plantillas, sin WordPress. Cada web está hecha a medida para tu negocio, desde una página de ventas hasta una tienda online completa.",
 	faq_q2: "¿Cuánto tiempo tarda una web?",
 	faq_a2:
-		"Una landing page: 5–7 días. Una web completa: 2–3 semanas. Una tienda online: 3–4 semanas. Recibes una fecha de entrega fija antes de empezar — sin plazos abiertos.",
+		"Una landing page: 5–7 días. Una web completa: 2–3 semanas. Una tienda online: 3–4 semanas. Recibes una fecha de entrega fija antes de empezar - sin plazos abiertos.",
 	faq_q3: "¿La web será 100% mía?",
 	faq_a3:
-		"Sí — propiedad total desde el primer día. Te entregamos todos los archivos fuente, acceso al hosting y control del dominio. Sin ataduras, sin tarifas recurrentes salvo que elijas un plan de mantenimiento.",
+		"Sí - propiedad total desde el primer día. Te entregamos todos los archivos fuente, acceso al hosting y control del dominio. Sin ataduras, sin tarifas recurrentes salvo que elijas un plan de mantenimiento.",
 	faq_q4: "¿Qué soporte tengo después del lanzamiento?",
 	faq_a4:
 		"Cada proyecto incluye 30 días de soporte gratuito post-lanzamiento. Después, ofrecemos planes de mantenimiento mensuales flexibles, o simplemente contáctanos cuando lo necesites.",
@@ -148,10 +148,10 @@ export const es: Translations = {
 		"Todas las webs que entregamos obtienen 100/100 en Google Lighthouse en rendimiento, SEO y accesibilidad. Puedes ver nuestro portfolio con proyectos reales antes de decidir. Te mostramos el diseño completo antes de escribir una sola línea de código.",
 	faq_q7: "¿Puedo hablar con vosotros antes de comprometerme?",
 	faq_a7:
-		"Sí — y te lo recomendamos. La primera llamada de estrategia es totalmente gratuita y sin compromiso. Te explicamos qué necesitas, cuánto cuesta y cuánto tarda. Sin presión comercial.",
+		"Sí - y te lo recomendamos. La primera llamada de estrategia es totalmente gratuita y sin compromiso. Te explicamos qué necesitas, cuánto cuesta y cuánto tarda. Sin presión comercial.",
 	faq_q8: "¿Usáis WordPress, Wix o plantillas?",
 	faq_a8:
-		"Nunca. Cada web se construye desde cero con código propio. Eso significa tiempos de carga más rápidos, mayor seguridad, sin conflictos de plugins y un sitio perfectamente adaptado a tu marca — no limitado por una plantilla.",
+		"Nunca. Cada web se construye desde cero con código propio. Eso significa tiempos de carga más rápidos, mayor seguridad, sin conflictos de plugins y un sitio perfectamente adaptado a tu marca - no limitado por una plantilla.",
 
 	contact_label: "Contacto",
 	contact_headline: "¿Hablamos de tu negocio?",

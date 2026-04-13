@@ -39,7 +39,7 @@
 }
 
 /* ─── Tailwind theme mapping ─────────────────────────────────── */
-/* @theme inline reads existing CSS vars — no new variables.     */
+/* @theme inline reads existing CSS vars - no new variables.     */
 /*                                                               */
 /* Backgrounds  →  bg-canvas · bg-card · bg-tint                */
 /* Text         →  text-ink · text-muted · text-subtle          */
@@ -94,44 +94,60 @@ body {
 	overflow-x: hidden;
 }
 
-/* ─── Custom Cursor ──────────────────────────────────────────── */
-.cursor {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 8px;
-	height: 8px;
-	background: var(--accent);
-	border-radius: 50%;
-	pointer-events: none;
-	z-index: 9999;
-	will-change: transform;
-	mix-blend-mode: multiply;
-}
-.cursor-follower {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 32px;
-	height: 32px;
-	border: 1.5px solid rgba(26, 23, 20, 0.2);
-	border-radius: 50%;
-	pointer-events: none;
-	z-index: 9998;
-	will-change: transform;
-	transition: width 0.45s var(--ease-out-expo), height 0.45s
-		var(--ease-out-expo), border-color 0.3s;
-}
-.cursor.is-hovering {
-	width: 40px;
-	height: 40px;
-	opacity: 0.5;
-}
-.cursor-follower.is-hovering {
-	width: 72px;
-	height: 72px;
-	border-color: var(--accent);
-	opacity: 0.6;
+/* ─── Custom Cursor (desktop/mouse only) ─────────────────────── */
+@media (pointer: fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 8px;
+		height: 8px;
+		background: var(--accent);
+		border-radius: 50%;
+		pointer-events: none;
+		z-index: 9999;
+		will-change: transform, opacity;
+		mix-blend-mode: multiply;
+		transition: opacity 0.2s, width 0.3s var(--ease-out-expo), height 0.3s
+			var(--ease-out-expo);
+	}
+	.cursor-follower {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 32px;
+		height: 32px;
+		border: 1.5px solid rgba(26, 23, 20, 0.2);
+		border-radius: 50%;
+		pointer-events: none;
+		z-index: 9998;
+		will-change: transform, opacity;
+		transition: width 0.45s var(--ease-out-expo), height 0.45s
+			var(--ease-out-expo), border-color 0.3s, opacity 0.2s;
+	}
+	.cursor.is-hovering {
+		width: 14px;
+		height: 14px;
+		opacity: 0.6;
+	}
+	.cursor-follower.is-hovering {
+		width: 56px;
+		height: 56px;
+		border-color: var(--accent);
+		opacity: 0.6;
+	}
+	.cursor.is-clicking {
+		width: 6px;
+		height: 6px;
+		background: var(--accent);
+	}
+	.cursor-follower.is-clicking {
+		width: 44px;
+		height: 44px;
+		border-color: var(--accent);
+		border-width: 2px;
+		opacity: 0.9;
+	}
 }
 
 /* ─── Grain ──────────────────────────────────────────────────── */

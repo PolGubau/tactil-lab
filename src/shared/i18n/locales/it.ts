@@ -7,11 +7,11 @@ export const it: Translations = {
 	nav_contact: "Contatto",
 
 	hero_eyebrow: "Web Design & Sviluppo · Barcellona",
-	hero_title: "La tua attività può attirare",
+	hero_title: "Siti web su misura che portano",
 	hero_accent: "più clienti.",
 	hero_description:
-		"Creiamo siti web che lavorano per te 24 ore su 24. Design pulito, strategia chiara, risultati reali. Senza tecnicismi - solo crescita.",
-	cta_primary: "Parliamone",
+		"Codice artigianale da Barcellona. Consegnato in 7 giorni. 100/100 su Google. 50+ aziende in crescita — nessun template, nessun WordPress, solo risultati.",
+	cta_primary: "Inizia il tuo progetto",
 	cta_secondary: "Vedi il nostro lavoro",
 
 	marquee_items: [
@@ -28,7 +28,7 @@ export const it: Translations = {
 	],
 
 	features_label: "Cosa facciamo",
-	features_headline: "Fatto per",
+	features_headline: "Costruito per",
 	features_headline_accent: "risultati reali.",
 	scroll_hint: "Scorri per esplorare",
 	feature_1_title: "Design che attira clienti",
@@ -49,7 +49,7 @@ export const it: Translations = {
 	feature_4_tag: "Performance",
 
 	process_label: "Come funziona",
-	process_headline: "Dall'idea al lancio in pochi giorni",
+	process_headline: "Dal briefing al lancio in 7 giorni",
 	step_1_num: "01",
 	step_1_title: "Consulenza gratuita",
 	step_1_desc:
@@ -127,7 +127,7 @@ export const it: Translations = {
 	pack_3_feat_5: "Supporto continuo",
 
 	faq_label: "FAQ",
-	faq_headline: "Domande? Abbiamo le risposte.",
+	faq_headline: "Domande frequenti, risposte dirette.",
 	faq_q1: "Cosa fate esattamente?",
 	faq_a1:
 		"Creiamo siti web da zero - nessun template, nessun WordPress. Ogni sito è fatto specificamente per la tua attività, da una pagina semplice a un negozio online completo.",
@@ -184,6 +184,8 @@ export const it: Translations = {
 	form_success: "Messaggio inviato! Ti risponderemo presto.",
 	form_error: "Errore nell'invio. Riprova.",
 
-	footer_tagline: "Se la tua attività esiste, merita un grande sito web.",
-	footer_copyright: "© 2025 Tactil. Tutti i diritti riservati.",
+	footer_tagline:
+		"Ogni giorno senza un grande sito web è un cliente che vince il tuo concorrente.",
+	footer_copyright:
+		"© 2025 Tactil Studio · Barcellona. Tutti i diritti riservati.",
 };

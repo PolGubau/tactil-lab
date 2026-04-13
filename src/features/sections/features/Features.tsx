@@ -2,6 +2,7 @@
 import { useTranslation } from '@/shared/i18n/hooks'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Code2, Palette, Smartphone, Zap } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -124,6 +125,7 @@ interface FeatureCardData {
   description: string
   tag: string
   color: string
+  icon: React.ReactNode
   illustration: React.ReactNode
   /** grid span class - controls bento layout */
   span: string
@@ -139,12 +141,18 @@ function BentoCard({ feat }: { feat: FeatureCardData }) {
     >
       {/* Header */}
       <div className='flex items-start justify-between mb-4'>
-        <span
-          className='text-[9px] tracking-[0.22em] uppercase font-bold px-3 py-1.5 rounded-full'
-          style={{ background: feat.color, color: '#1A1714' }}
-        >
-          {feat.tag}
-        </span>
+        <div className='flex items-center gap-3'>
+          <div className='w-10 h-10 rounded-xl flex items-center justify-center'
+            style={{ background: `${feat.color}18`, color: feat.color }}>
+            {feat.icon}
+          </div>
+          <span
+            className='text-[9px] tracking-[0.22em] uppercase font-bold px-3 py-1.5 rounded-full'
+            style={{ background: feat.color, color: '#1A1714' }}
+          >
+            {feat.tag}
+          </span>
+        </div>
         <span className='text-6xl font-black leading-none select-none'
           style={{ color: feat.color, opacity: 0.1 }}>
           {feat.number}
@@ -181,24 +189,28 @@ export default function Features() {
       number: '01', tag: t.feature_1_tag, color: '#c4eb36',
       title: t.feature_1_title, description: t.feature_1_desc,
       span: 'col-span-1 md:col-span-2',
+      icon: <Palette size={18} />,
       illustration: <DesignIllustration color='#c4eb36' />,
     },
     {
       number: '02', tag: t.feature_2_tag, color: '#0097B2',
       title: t.feature_2_title, description: t.feature_2_desc,
       span: 'col-span-1',
+      icon: <Code2 size={18} />,
       illustration: <DevIllustration color='#0097B2' />,
     },
     {
       number: '03', tag: t.feature_3_tag, color: '#7C5CBF',
       title: t.feature_3_title, description: t.feature_3_desc,
       span: 'col-span-1',
+      icon: <Smartphone size={18} />,
       illustration: <ResponsiveIllustration color='#7C5CBF' />,
     },
     {
       number: '04', tag: t.feature_4_tag, color: '#1A9B6C',
       title: t.feature_4_title, description: t.feature_4_desc,
       span: 'col-span-1 md:col-span-2',
+      icon: <Zap size={18} />,
       illustration: <PerformanceIllustration color='#1A9B6C' />,
     },
   ]
