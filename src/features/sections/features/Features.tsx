@@ -59,8 +59,8 @@ function BentoCard({ feat }: { feat: FeatureCardData }) {
 
       {/* Text */}
       <div className='mt-6 flex-1'>
-        <h3 className='text-xl md:text-2xl font-black leading-[1.1] mb-2'>{feat.title}</h3>
-        <p className='text-sm leading-relaxed text-muted'>{feat.description}</p>
+        <h3 className='text-xl md:text-2xl font-black leading-[1.1] mb-2 text-balance'>{feat.title}</h3>
+        <p className='text-sm leading-relaxed text-muted text-pretty'>{feat.description}</p>
       </div>
 
       <div className='h-px w-10 mt-5 bg-accent opacity-60' />
@@ -146,7 +146,7 @@ export default function Features() {
       <div className='max-w-7xl mx-auto'>
         <div data-f-card className='mb-12 md:mb-16'>
           <span className='pill mb-5 block w-fit'>{t.features_label}</span>
-          <h2 className='font-black leading-[0.88] tracking-tight' style={{ fontSize: 'clamp(2.8rem,5.5vw,6rem)' }}>
+          <h2 className='font-black leading-[0.88] tracking-tight text-balance' style={{ fontSize: 'clamp(2.8rem,5.5vw,6rem)' }}>
             {t.features_headline}{' '}
             <span className='text-accent'>{t.features_headline_accent}</span>
           </h2>

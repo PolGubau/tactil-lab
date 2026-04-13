@@ -49,7 +49,7 @@ export default function Process() {
       <div className='max-w-7xl mx-auto'>
         <div className='process-header mb-12 opacity-0'>
           <span className='pill mb-4 block w-fit'>{t.process_label}</span>
-          <h2 className='text-4xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-xl'>{t.process_headline}</h2>
+          <h2 className='text-4xl md:text-6xl font-black leading-[0.95] tracking-tight max-w-xl text-balance'>{t.process_headline}</h2>
         </div>
         <div className='relative hidden lg:block mb-4'>
           <div className='h-px w-full overflow-hidden bg-edge'>
@@ -70,8 +70,8 @@ export default function Process() {
                 </span>
               </div>
               <div>
-                <h3 className='text-lg font-black mb-2'>{step.title}</h3>
-                <p className='text-sm leading-relaxed text-muted'>{step.desc}</p>
+                <h3 className='text-lg font-black mb-2 text-balance'>{step.title}</h3>
+                <p className='text-sm leading-relaxed text-muted text-pretty'>{step.desc}</p>
               </div>
               {step.accent && (
                 <div className='absolute top-0 right-0 w-1 h-full bg-accent opacity-50' />

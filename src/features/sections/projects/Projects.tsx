@@ -39,8 +39,8 @@ function ProjectCard({ project, summary, index }: { project: ReturnType<typeof g
 
       {/* Content */}
       <div className='p-6 md:p-8'>
-        <h3 className='text-2xl font-black mb-3'>{project.title}</h3>
-        <p className='text-sm leading-relaxed text-muted mb-5'>{summary}</p>
+        <h3 className='text-2xl font-black mb-3 text-balance'>{project.title}</h3>
+        <p className='text-sm leading-relaxed text-muted mb-5 text-pretty'>{summary}</p>
         <div className='flex flex-wrap gap-2'>
           {project.tags.map(tag => (
             <span key={tag} className='text-[10px] tracking-wide uppercase font-semibold px-2.5 py-1 rounded-full border border-soft text-muted'>
@@ -78,8 +78,8 @@ export default function Projects() {
         <div className='projects-header opacity-0 flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14'>
           <div>
             <span className='pill mb-4 block w-fit'>{t.projects_label}</span>
-            <h2 className='text-4xl md:text-6xl font-black leading-[0.95] tracking-tight'>{t.projects_headline}</h2>
-            <p className='mt-3 text-base text-muted'>{t.projects_subtitle}</p>
+            <h2 className='text-4xl md:text-6xl font-black leading-[0.95] tracking-tight text-balance'>{t.projects_headline}</h2>
+            <p className='mt-3 text-base text-muted text-pretty'>{t.projects_subtitle}</p>
           </div>
         </div>
 

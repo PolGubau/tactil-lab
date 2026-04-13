@@ -63,8 +63,8 @@ export default function Contact() {
       <div className='max-w-7xl mx-auto'>
         <div data-c-header className='mb-14'>
           <span className='pill mb-4 block w-fit'>{t.contact_label}</span>
-          <h2 className='text-4xl md:text-6xl font-black mb-3 tracking-tight'>{t.contact_headline}</h2>
-          <p className='max-w-md text-base text-muted'>{t.contact_subtitle}</p>
+          <h2 className='text-4xl md:text-6xl font-black mb-3 tracking-tight text-balance'>{t.contact_headline}</h2>
+          <p className='max-w-md text-base text-muted text-pretty'>{t.contact_subtitle}</p>
         </div>
 
         <div className='grid md:grid-cols-5 gap-14 md:gap-20'>

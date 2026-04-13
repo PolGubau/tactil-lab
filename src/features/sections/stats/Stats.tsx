@@ -102,13 +102,13 @@ export default function Stats() {
           {/* Left: editorial headline */}
           <div data-stats-header className="lg:col-span-2 opacity-0">
             <h2
-              className="font-black leading-[0.92] tracking-tight mb-5 text-ink"
+              className="font-black leading-[0.92] tracking-tight mb-5 text-ink text-balance"
               style={{ fontSize: "clamp(2.2rem,4.5vw,4rem)" }}
             >
               {t.stats_headline}
             </h2>
             <p
-              className="text-base leading-relaxed text-muted"
+              className="text-base leading-relaxed text-muted text-pretty"
               style={{ maxWidth: "30ch" }}
             >
               {t.stats_description}
@@ -128,7 +128,7 @@ export default function Stats() {
                 >
                   <span
                     data-stat-num
-                    className="font-black tracking-tight leading-none text-accent"
+                    className="font-black tracking-tight leading-none text-accent tabular-nums"
                     style={{ fontSize: "clamp(2.4rem,4.5vw,3.2rem)" }}
                   >
                     {num === 0 ? stat.value : "0" + suffix}

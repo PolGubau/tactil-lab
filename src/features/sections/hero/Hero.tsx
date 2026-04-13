@@ -119,7 +119,7 @@ export default function Hero() {
               <span className='text-[11px] text-muted tracking-wide'>Barcelona · Est. 2026</span>
             </div>
 
-            <h1 className='font-black leading-[0.88] mb-8 md:mb-10' style={{ fontSize: 'clamp(2.4rem, 4.8vw, 6.5rem)', letterSpacing: '-0.04em' }}>
+            <h1 className='font-black leading-[0.88] mb-8 md:mb-10 text-balance' style={{ fontSize: 'clamp(2.4rem, 4.8vw, 6.5rem)', letterSpacing: '-0.04em' }}>
               <span className='flex flex-wrap gap-x-[0.22em]'>
                 {titleWords.map((word, i) => (
                   <span key={`t-${i}`} className='overflow-hidden inline-block pb-[0.15em] mb-[-0.15em]'>
@@ -136,7 +136,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p data-h-desc className='text-base md:text-lg leading-relaxed text-muted opacity-0 mb-8 max-w-sm'>
+            <p data-h-desc className='text-base md:text-lg leading-relaxed text-muted opacity-0 mb-8 max-w-sm text-pretty'>
               {t.hero_description}
             </p>
 

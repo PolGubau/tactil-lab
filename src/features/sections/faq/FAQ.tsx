@@ -29,7 +29,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           style={{ transform: open ? 'rotate(45deg)' : 'none', borderColor: open ? 'var(--accent)' : 'var(--border)', color: 'var(--accent)' }}>+</span>
       </button>
       <div ref={bodyRef} style={{ height: 0, overflow: 'hidden' }}>
-        <p className='pb-5 text-sm leading-relaxed max-w-2xl text-muted'>{answer}</p>
+        <p className='pb-5 text-sm leading-relaxed max-w-2xl text-muted text-pretty'>{answer}</p>
       </div>
     </div>
   )
@@ -58,7 +58,7 @@ export default function FAQ() {
       <div className='max-w-7xl mx-auto grid md:grid-cols-2 gap-14 md:gap-20'>
         <div className='md:sticky top-32 self-start'>
           <span className='pill mb-4 block w-fit'>{t.faq_label}</span>
-          <h2 className='text-4xl md:text-5xl font-black leading-[0.95] tracking-tight'>{t.faq_headline}</h2>
+          <h2 className='text-4xl md:text-5xl font-black leading-[0.95] tracking-tight text-balance'>{t.faq_headline}</h2>
           <div className='mt-8'>
             <a href='#contact' className='btn-primary'>{t.cta_primary}</a>
           </div>
